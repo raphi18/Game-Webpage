@@ -2,6 +2,9 @@
 from flask import Flask, render_template
 import json
 from random import choice
+from webscraper import *
+from bs4 import BeautifulSoup
+import requests
 
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -18,11 +21,19 @@ def check_answer(q_id, a_id):
     q = list(filter(lambda x: x["id"] == q_id, questions))[0]
     return q["correct"] == a_id
 
+def random_headline():
+    headline = choice(my_scraper())
+    return headline
+
 
 
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.route("/scrape")
+def scrape():
+    return render_template("scrape.html", headline=random_headline())
 
 
 @app.route("/question")
