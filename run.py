@@ -22,8 +22,9 @@ def check_answer(q_id, a_id):
     return q["correct"] == a_id
 
 def random_headline():
-    headline = choice(my_scraper())
-    return headline
+    with open("headlines.json",'r') as f:
+        headline = json.load(f)
+    return choice(headline)
 
 
 
