@@ -4,10 +4,10 @@ from random import choice
 import json
 
 def my_scraper():
-    url = "https://www.srf.ch/"
+    url = "https://www.theonion.com/"
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
-    headlines = [item.string for item in soup.select(".teaser__title")]
+    headlines = [item.string for item in soup.select("h4")]
     return headlines
 
 headlines = my_scraper()
