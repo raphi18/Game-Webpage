@@ -25,9 +25,14 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/question")
+@app.route("/question/")  
 def question():
     return render_template("question.html", question=random_question())
+
+@app.route("/Cedric/")  
+def Cedric():
+    return render_template("Cedric.html")
+
 
 
 @app.route("/answer/<int:question_id>/<int:answer_id>")
