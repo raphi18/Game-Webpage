@@ -29,6 +29,19 @@ def home():
 def question():
     return render_template("question.html", question=random_question())
 
+@app.route("/test")
+def test():
+    return render_template("test.html")
+
+@app.route("/main")
+def main():
+    return render_template("main.html")
+
+@app.route("/table")
+def table():
+    return render_template("table.html")
+
+
 
 @app.route("/answer/<int:question_id>/<int:answer_id>")
 def answer(question_id, answer_id):

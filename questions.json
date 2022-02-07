@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "First Question",
-        "question": "Click the correct answer",
+        "question": "What is the name of this Animal?",
         "answers": [
             {
                 "id": 1,
