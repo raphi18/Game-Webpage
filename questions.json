@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "First Question",
-        "question": "What is the correct answer?",
+        "question": "Click the correct answer",
         "answers": [
             {
                 "id": 1,
