@@ -37,7 +37,7 @@ def scrape():
     return render_template("scrape.html", headline=random_headline())
 
 
-@app.route("/question")
+@app.route("/question/")  
 def question():
     return render_template("question.html", question=random_question())
 
@@ -52,6 +52,7 @@ def main():
 @app.route("/table")
 def table():
     return render_template("table.html")
+
 
 
 
