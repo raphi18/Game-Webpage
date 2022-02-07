@@ -5,7 +5,7 @@ body {
 .navbar {
     position: fixed;
     width: 180px;
-    background: rgba(34, 45, 139, 0.922);
+    background: rgb(243, 116, 232);
     height: 100%;
     margin: 0px;
 }
@@ -24,7 +24,7 @@ body {
 }
 h1 {
     width: 100%;
-    background: rgba(34, 45, 139, 0.922);
+    background: rgb(243, 116, 232);
     color: white;
     margin: 0px;
     padding: 15px 20px;
@@ -37,8 +37,8 @@ h1 {
 .question {
     margin: 50px auto;
     width: 70%;
-    border: 5px dashed rgb(123, 34, 139)
-    border-radius 15px;
+    border: 5px dashed rgb(243, 116, 232);
+    border-radius: 15px;
     padding: 40px 70px;
 }
 
@@ -69,8 +69,8 @@ h1 {
 .answer-item a {
     text-decoration: None;
     color: white;
-    border: 3px solid rgb(123, 34, 139);
-    background: rgb(123, 34, 139);
+    border: 3px solid rgb(243, 116, 232);
+    background: rgb(243, 116, 232);
     border-radius: 5px;
     width: 100%;
     display: flex;
@@ -81,7 +81,7 @@ h1 {
 }
 
 .answer-item a:hover {
-    background: rgba(8, 8, 8, 0.959);
+    background: rgb(97, 0, 100);
     font-size: 2rem;
 }
 
